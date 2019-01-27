@@ -1,0 +1,28 @@
+# Pour créer une image sur une machine x86/x64
+FROM centos
+
+
+
+MAINTAINER derioss https://github.com/Derioss
+
+# Update image
+RUN yum -y update && \
+    yum install -y vim && \
+    yum clean all
+
+
+
+RUN mkdir /opt/web2py 
+WORKDIR /opt/web2py
+
+# Copy Web2py
+ADD web2py/ /opt/web2py/
+ADD certificates/* /opt/web2py/
+
+RUN adduser designer && chown -R designer: /opt/web2py/
+
+# Expose port 8000
+EXPOSE 443
+
+# Run web2py
+ENTRYPOINT ["./web2py.py", "-i", "0.0.0.0","-p","443", "-a", "youradminpassword", "-c", "/opt/web2py/server.crt", "-k", "/opt/web2py/server.key"]
