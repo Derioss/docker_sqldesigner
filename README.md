@@ -38,7 +38,7 @@ docker start designer
 ```
 
  
-https://yoururl/designer/
+go in https://yoururl/designer/ and enjoy
 
 ### software source
 
