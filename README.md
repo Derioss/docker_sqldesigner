@@ -20,6 +20,10 @@ docker build -t designer .
 ```
 docker run --name=designer --restart always -v yourpath:/opt/web2py/applications/designer/databases -d -p 443:443 designer
 ```
+```
+docker start designer
+```
+
  
 https://yoururl/designer/
 
