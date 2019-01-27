@@ -3,7 +3,7 @@
 ### usage
 
 put you certificate in ./certificates with the same name
-edit 
+edit web2py/dockerfile and modify on line 28 "youradminpassword"
 
 ```
 git clone https://github.com/Derioss/docker_sqldesigner.git
