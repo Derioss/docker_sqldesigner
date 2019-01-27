@@ -1,0 +1,17 @@
+version: 3
+
+services:
+
+  sqldesigner:
+    image: designer
+    volumes:
+        - db_data:/opt/web2py/applications/designer/databases
+    restart: always
+    ports:
+      - "443:433"
+  volumes:
+    db_data: /home/web2py
+
+
+
+
