@@ -2,8 +2,11 @@
 
 ### usage
 
-'''
-git clone 
+
+```
+git clone https://github.com/Derioss/docker_sqldesigner.git
+
+```
 
 ```
 cd web2py 
