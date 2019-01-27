@@ -2,7 +2,8 @@
 
 ### usage
 
-put you certificate in 
+put you certificate in ./certificates with the same name
+edit 
 
 ```
 git clone https://github.com/Derioss/docker_sqldesigner.git
