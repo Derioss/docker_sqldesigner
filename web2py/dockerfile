@@ -21,7 +21,7 @@ ADD certificates/* /opt/web2py/
 
 RUN adduser designer && chown -R designer: /opt/web2py/
 
-# Expose port 8000
+# Expose port 
 EXPOSE 443
 
 # Run web2py
